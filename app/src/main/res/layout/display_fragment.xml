@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_height="match_parent">
+    <android.support.v4.widget.NestedScrollView
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/custombar"
+            layout="@layout/display_bar" />
+
+        <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/pager"
+            android:layout_marginTop="8dp"
+            android:layout_below="@id/custombar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/view_page_h">
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/main_data"
+            android:layout_below="@id/pager"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/row_padding_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/row_padding_vertical"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/neosansmedium"
+                />
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:fontFamily="@font/neosanslight"
+                />
+            <RatingBar
+                android:id="@+id/ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
+                android:progressTint="@color/colorPrimary"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/neosanslight"
+                />
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/neosansregular"
+                />
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="end"
+                android:fontFamily="@font/neosansregular"
+                android:text="@string/app_name"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_data2"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/row_padding_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/row_padding_vertical"
+            android:layout_alignEnd="@id/main_data"
+            android:layout_below="@id/pager"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/users"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                />
+
+        </LinearLayout>
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_below="@id/main_data"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/display_map_h"
+            mapbox:mapbox_cameraTargetLat="40.73581"
+            mapbox:mapbox_cameraTargetLng="-73.99155"
+            mapbox:mapbox_styleUrl="mapbox://styles/mapbox/streets-v10"
+            mapbox:mapbox_cameraZoom="11" />
+
+        <LinearLayout
+            android:id="@+id/map_detail"
+            android:layout_below="@id/mapView"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/row_padding_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/row_padding_vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:gravity="start"
+                android:fontFamily="@font/neosansregular"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:layout_gravity="end"
+                android:fontFamily="@font/neosansregular"
+                android:gravity="end"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/reviews"
+            android:layout_below="@id/map_detail"
+            android:paddingBottom="@dimen/row_padding_vertical"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/row_padding_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:fontFamily="@font/neosansmedium"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/reviews"
+            android:id="@+id/recycler_view_display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    >
+    <font android:font="@font/neosansblack"
+        app:font="@font/neosansblack"
+        tools:targetApi="o" />
+
+    <font android:font="@font/neosansblackitalic"
+        app:font="@font/neosansblackitalic"/>
+
+    <font android:font="@font/neosanslightitalic"
+        app:font="@font/neosanslightitalic"/>
+
+    <font android:font="@font/neosansmediumitalic"
+        app:font="@font/neosansmediumitalic"/>
+</font-family>

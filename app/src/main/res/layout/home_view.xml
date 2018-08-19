@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include
+        android:id="@+id/custombar"
+        layout="@layout/customtoolbar" />
+
+    <GridView
+        android:layout_below="@id/custombar"
+        android:id="@+id/grid_view_image_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnWidth="70dp"
+        android:gravity="center"
+        android:numColumns="auto_fit" />
+
+    <View
+        android:id="@+id/breakline"
+        android:layout_margin="22dp"
+        android:layout_below="@id/grid_view_image_text"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible" />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/breakline"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="800">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include android:id="@+id/shim1" layout="@layout/shim_home_item" />
+        <include android:id="@+id/shim2" layout="@layout/shim_home_item" />
+        <include android:id="@+id/shim3" layout="@layout/shim_home_item" />
+    </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/SwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_below="@id/breakline"
+        android:layout_height="match_parent">
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/breakline"
+        android:id="@+id/recycler_view_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

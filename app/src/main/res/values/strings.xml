@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RecommenderApp</string>
+    <string name="user" />
+    <string name="home" />
+    <string name="recomnd" />
+    <string name="Loginbutton_1">Continue with Facebook</string>
+    <string name="Loginbutton_2">Continue with Google</string>
+    <string name="terms">By Continuing you accept our</string>
+    <string name="terms2">Terms and Conditions</string>
+    <string name="username">Username</string>
+    <string name="write_review">Write a Review :</string>
+    <string name="rating_text">Rate this Service :</string>
+    <string name="submit">Submit Review</string>
+    <string name="add_photos">Add Photos</string>
+    <string name="text_friends_1">Have been here</string>
+    <string name="service_about">Breakfast and Brunch</string>
+    <string name="rating_extra">100 Reviews</string>
+    <string name="hours_service">Hours Today:</string>
+    <string name="timing_checkin">11:00 AM - 10:00 PM</string>
+    <string name="status_service">Open</string>
+
+    <string name="facebook_app_id">285288192038585</string>
+    <string name="fb_login_protocol_scheme">fb285288192038585</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">21564f01d7b7c2bc25ed4b652c1dd2f3</string>
+    <string name="mapbox_token">pk.eyJ1IjoiYW1hbm5lb3giLCJhIjoiY2prM3ZzOG9nMTN4bTNsa2N2cTJocXkwaiJ9.7o16top0SZdv449TWqdI1g</string>
+</resources>

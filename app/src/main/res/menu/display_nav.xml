@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/destination"
+        android:icon="@drawable/ic_destination"
+
+        android:title="" />
+
+
+    <item
+        android:id="@+id/checkin"
+        android:icon="@drawable/ic_check_in"
+
+        android:title="" />
+
+    <item
+        android:id="@+id/write_review"
+        android:icon="@drawable/ic_write_review"
+        android:title="" />
+
+    <item
+        android:id="@+id/add_photo"
+        android:icon="@drawable/ic_add_photo"
+        android:title=""
+        />
+
+</menu>

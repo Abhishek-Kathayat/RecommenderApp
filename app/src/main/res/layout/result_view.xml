@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/custombar"
+            layout="@layout/result_bar" />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_below="@id/custombar"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/toprated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_filter"
+                android:fontFamily="@font/neosansregular"
+                android:text="Price"
+                android:layout_margin="1dp"
+                android:minHeight="25dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary" />
+            <Button
+                android:id="@+id/recent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_filter"
+                android:fontFamily="@font/neosansregular"
+                android:text="Location"
+                android:layout_margin="1dp"
+                android:minHeight="25dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"/>
+            <Button
+                android:id="@+id/popular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_filter"
+                android:fontFamily="@font/neosansregular"
+                android:text="Deliver"
+                android:layout_margin="1dp"
+                android:minHeight="25dp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:layout_below="@id/layout2"
+            android:id="@+id/recycler_view_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

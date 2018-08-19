@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/custombar"
+        layout="@layout/display_bar" />
+
+
+    <RelativeLayout
+        android:layout_below="@id/custombar"
+        android:id="@+id/RelativeLay_1"
+        android:paddingBottom="@dimen/row_padding_vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/row_padding_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/LinearLay_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/Image_Userimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/review_paddings"
+
+                android:src="@drawable/ic_user_default"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/Text_Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:inputType="text"
+                android:background="@drawable/text_fields"
+                android:fontFamily="@font/neosansregular"
+                android:hint="@string/app_name"
+                android:textColor="@color/colorGrey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLay_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/LinearLay_1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Text_Review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neosansmedium"
+                android:padding="@dimen/review_paddings"
+                android:text="@string/write_review" />
+
+
+
+            <EditText
+                android:id="@+id/EditText_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_fields"
+                android:inputType="textMultiLine"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:lines="6"
+                android:gravity="top|left"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:scrollHorizontally="false"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/Text_Rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neosansmedium"
+                android:padding="@dimen/review_paddings"
+                android:text="@string/rating_text" />
+
+            <RatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:isIndicator="false"
+                android:progressTint="@color/colorPrimary"
+                android:stepSize="0.5" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/submit_button_margin"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/button"
+                android:backgroundTint="@color/colorPrimary"
+                android:padding="@dimen/review_paddings"
+                android:text="@string/submit"
+                android:textAllCaps="false"
+                android:fontFamily="@font/neosansregular"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

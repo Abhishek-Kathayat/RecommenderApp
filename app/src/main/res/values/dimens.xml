@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="row_padding_vertical">10dp</dimen>
+    <dimen name="home_model_image_width">320dp</dimen>
+    <dimen name="home_model_image">140dp</dimen>
+
+    <dimen name="user_img">100dp</dimen>
+
+    <dimen name="search_img_h">120dp</dimen>
+    <dimen name="search_img_w">180dp</dimen>
+
+    <dimen name="background_stretch">260dp</dimen>
+    <dimen name="drawable_padding">20dp</dimen>
+    <dimen name="overall_content_padding">15dp</dimen>
+    <dimen name="login_button_margins_top">22dp</dimen>
+
+    <dimen name="icon_h">100dp</dimen>
+    <dimen name="icon_w">100dp</dimen>
+
+    <dimen name="view_page_h">200dp</dimen>
+
+    <dimen name="display_map_h">120dp</dimen>
+
+    <dimen name="review_paddings">12dp</dimen>
+    <dimen name="margin_edittext">5dp</dimen>
+    <dimen name="submit_button_margin">20dp</dimen>
+    <dimen name="placeholder_text_height">16dp</dimen>
+    <dimen name="placeholder_text_width">200dp</dimen>
+    <dimen name="font_size">24sp</dimen>
+    <dimen name="padding_text">16dp</dimen>
+    <dimen name="floataction_size">60dp</dimen>
+    <dimen name="margin_floataction">30dp</dimen>
+    <dimen name="user_thumb_h">32dp</dimen>
+    <dimen name="user_thumb_w">32dp</dimen>
+
+    <dimen name="margin_checkins">14dp</dimen>
+    <dimen name="image_checkin_height">200dp</dimen>
+    <dimen name="text_checkin">20sp</dimen>
+    <dimen name="service_name_margin">10sp</dimen>
+    <dimen name="contact_badge_margin">3dp</dimen>
+    <dimen name="text_checkin_2">12sp</dimen>
+    <dimen name="extra_margin">25dp</dimen>
+
+    <dimen name="check_mapview_h_">160dp</dimen>
+
+    <dimen name="nearby_img_h">150dp</dimen>
+</resources>
