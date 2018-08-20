@@ -20,8 +20,7 @@ import com.recom.www.recommenderapp.Fragments.DisplayFragment;
 import com.recom.www.recommenderapp.Fragments.ReviewFragment;
 
 
-public class
-DisplayActivity extends AppCompatActivity {
+public class DisplayActivity extends AppCompatActivity {
     private MapView mapView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
